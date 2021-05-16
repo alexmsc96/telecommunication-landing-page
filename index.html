@@ -114,11 +114,13 @@
         </div>
         <div class="discover">
           <h2 class="font-weight-bold">Descopera canalele incluse</h2>
-          <select class="select mb-4" onchange="showMe(this)">
-            <option value="toate">Toate Canalele</option>
-            <option value="hd">HD</option>
-            <option value="stiri">Stiri</option>
-          </select>
+          <div class="select-div">
+            <select class="select" onchange="showMe(this)">
+              <option value="toate">Toate Canalele</option>
+              <option value="hd">HD</option>
+              <option value="stiri">Stiri</option>
+            </select>
+          </div>
           <div id="toate">
             <p class="h4 font-weight-bold">
               Toate canalele <span id="all" class="h6 text-muted"></span>
@@ -169,9 +171,11 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
+                  <div class="row video-row">
                   <div class="card-title"><h3 class="font-weight-bold">Urmareste tutorialul</h3></div>
                   <p class="card-text pl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident deserunt tempore officiis nam tempora perferendis, eveniet sequi sit ex porro error commodi perspiciatis eum? Ducimus ullam recusandae reiciendis tempore animi.</p>
-                  <button type="button" class="font-weight-bold btn btn-sm btn-outline-dark">Vezi tutorialul</button>
+                    <button type="button" class="font-weight-bold btn btn-sm btn-outline-dark">Vezi tutorialul</button>
+                  </div>
                 </div>
               </div>
             </div>

@@ -5,6 +5,10 @@ $secondary: #4cb4e6;
 
 @import "./node_modules/bootstrap/scss/bootstrap";
 
+.slick-track {
+  margin: auto;
+}
+
 .main {
   position: relative;
   min-height: 100vh;
@@ -186,6 +190,25 @@ ul {
   }
 }
 
+.select-div {
+  position: relative;
+  width: min-content;
+  margin-bottom: 1rem;
+
+  &::after {
+    position: absolute;
+    content: ">";
+    top: 0;
+    right: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    transform: rotate(90deg);
+    background-color: $white;
+    pointer-events: none;
+  }
+}
+
 .select {
   border: none;
   cursor: pointer;
@@ -205,10 +228,6 @@ ul {
     span {
       color: $primary;
     }
-  }
-
-  .card {
-    width: 30%;
   }
 
   .slick-dots {
@@ -265,6 +284,13 @@ iframe {
       height: 0.3rem;
       top: 10%;
       left: 0;
+    }
+  }
+
+  .video-row {
+    justify-content: center;
+    @include media-breakpoint-up(md) {
+      justify-content: flex-start;
     }
   }
 }

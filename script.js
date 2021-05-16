@@ -29,44 +29,45 @@ moreToggler.addEventListener("click", () => {
 $(document).ready(() => {
   $("#slideshow .slick").slick({
     infinite: true,
-    slidesToShow: 10,
-    slidesToScroll: 3,
     prevArrow: '<button class="slide-arrow prev-arrow"><</button>',
     nextArrow: '<button class="slide-arrow next-arrow">></button>',
+    mobileFirst: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 8,
+          slidesToShow: 10,
           slidesToScroll: 3,
         },
       },
       {
         breakpoint: 900,
         settings: {
-          slidesToShow: 7,
+          slidesToShow: 8,
           slidesToScroll: 3,
         },
       },
       {
         breakpoint: 800,
         settings: {
+          slidesToShow: 7,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 650,
+        settings: {
           slidesToShow: 5,
           slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 500,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 425,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
         },
       },
     ],
@@ -114,6 +115,8 @@ $(document).ready(() => {
     dots: true,
     arrows: false,
     mobileFirst: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 992,
