@@ -1,0 +1,107 @@
+{
+  "channels": {
+    "all": [
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png",
+      "./assets/images/rock.png"
+    ],
+    "hd": [
+      "./assets/images/utv-hd.png",
+      "./assets/images/utv-hd.png",
+      "./assets/images/utv-hd.png",
+      "./assets/images/utv-hd.png",
+      "./assets/images/utv-hd.png",
+      "./assets/images/utv-hd.png",
+      "./assets/images/utv-hd.png",
+      "./assets/images/utv-hd.png",
+      "./assets/images/utv-hd.png",
+      "./assets/images/utv-hd.png",
+      "./assets/images/utv-hd.png",
+      "./assets/images/utv-hd.png",
+      "./assets/images/utv-hd.png",
+      "./assets/images/utv-hd.png"
+    ],
+    "news": [
+      "./assets/images/wild.png",
+      "./assets/images/wild.png",
+      "./assets/images/wild.png",
+      "./assets/images/wild.png",
+      "./assets/images/wild.png",
+      "./assets/images/wild.png",
+      "./assets/images/wild.png",
+      "./assets/images/wild.png",
+      "./assets/images/wild.png",
+      "./assets/images/wild.png",
+      "./assets/images/wild.png",
+      "./assets/images/wild.png",
+      "./assets/images/wild.png",
+      "./assets/images/wild.png"
+    ]
+  },
+  "offers": [
+    {
+      "name": "HBO GO",
+      "description": "Ai acces pe televizor la intreaga colectie de filme de box office, precum si la HBO GO.",
+      "price": "3"
+    },
+    {
+      "name": "MAXPAK",
+      "description": "Ai acces pe televizor la intreaga colectie de filme de box office, precum si la HBO GO.",
+      "price": "5"
+    },
+    {
+      "name": "HBO GO",
+      "description": "Ai acces pe televizor la intreaga colectie de filme de box office, precum si la HBO GO.",
+      "price": "3"
+    },
+    {
+      "name": "MAXPAK",
+      "description": "Ai acces pe televizor la intreaga colectie de filme de box office, precum si la HBO GO.",
+      "price": "5"
+    },
+    {
+      "name": "MAXPAK",
+      "description": "Ai acces pe televizor la intreaga colectie de filme de box office, precum si la HBO GO.",
+      "price": "5"
+    }
+  ],
+  "tvBox": [
+    {
+      "title": "TV Box HD",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia vitae quo blanditiis voluptatem!"
+    },
+    {
+      "title": "TV Box HD",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia vitae quo blanditiis voluptatem!"
+    },
+    {
+      "title": "TV Box HD",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia vitae quo blanditiis voluptatem!"
+    },
+    {
+      "title": "TV Box HD",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia vitae quo blanditiis voluptatem!"
+    }
+  ]
+}

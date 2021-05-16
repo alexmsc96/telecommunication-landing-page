@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <section class="main">
+      <div class="popup rounded-lg">
+        <p>
+          <span class="h2 font-weight-bold">105 canale</span><br />din care 25
+          HD incluse
+        </p>
+        <button class="close-popup font-weight-bold">X</button>
+      </div>
+      <div class="container-lg">
+        <h1 class="font-weight-bold mt-4">Abonamente TV prin cablu</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          recusandae quo quaerat necessitatibus consequuntur cum ex accusamus.
+        </p>
+        <div class="card-container">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="card-title font-weight-bold">
+                    <span class="font-weight-bold text-muted">Abonamentul</span>
+                    <br />Explore
+                  </h2>
+                  <p class="card-subtitle font-weight-bold">
+                    <span class="font-weight-bold">105 canale</span> <br />din
+                    care 25 canale HD incluse
+                  </p>
+                  <ul class="mt-4 ml-0 pl-3">
+                    <li>
+                      <strong>echipamentTV Box HD sau modul CI+</strong> inclus
+                    </li>
+                    <li>
+                      <strong>55 canale</strong> in <span>Orange TV Go</span>
+                    </li>
+                    <li><strong>optiune Movie Go Unlimited</strong> inclusa</li>
+                  </ul>
+                  <p class="h3 font-weight-bold mb-0">7€/luna</p>
+                  <p class="text-muted tva">TVA inclus</p>
+                  <button
+                    type="button"
+                    class="btn rounded-0 btn-block btn-primary mb-3"
+                  >
+                    Vezi oferta Love
+                  </button>
+                  <p class="card-text">
+                    Abonamentul Explore se poate activa doar cu un abonament de
+                    internet prin fibra
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="card-title font-weight-bold">
+                    <span class="font-weight-bold text-muted">Abonamentul</span>
+                    <br />Global
+                  </h2>
+                  <p class="card-subtitle font-weight-bold">
+                    <span class="font-weight-bold">129 canale</span> <br />din
+                    care 36 canale HD incluse
+                  </p>
+                  <ul class="mt-4 ml-0 pl-3">
+                    <li>
+                      <strong>echipamentTV Box HD sau modul CI+</strong> inclus
+                    </li>
+                    <li>
+                      <strong>55 canale</strong> in <span>Orange TV Go</span>
+                    </li>
+                    <li><strong>optiune Movie Go Unlimited</strong> inclusa</li>
+                  </ul>
+                  <p class="h3 font-weight-bold mb-0">8€/luna</p>
+                  <p class="text-muted tva">TVA inclus</p>
+                  <button
+                    type="button"
+                    class="btn rounded-0 btn-block btn-primary mb-3"
+                  >
+                    Vezi oferta Love
+                  </button>
+                  <p class="card-text">
+                    Abonamentul Explore se poate activa doar cu un abonament de
+                    internet prin fibra
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="discover">
+          <h2 class="font-weight-bold">Descopera canalele incluse</h2>
+          <select class="select mb-4" onchange="showMe(this)">
+            <option value="toate">Toate Canalele</option>
+            <option value="hd">HD</option>
+            <option value="stiri">Stiri</option>
+          </select>
+          <div id="toate">
+            <p class="h4 font-weight-bold">
+              Toate canalele <span id="all" class="h6 text-muted"></span>
+              <div id="slideshow">
+                <div class="slick" id="jsonAll">
+                </div>
+              </div>
+            </p>
+          </div>
+          <div id="stiri">
+            <p class="h4 font-weight-bold">
+              Stiri <span id="news" class="h6 text-muted"></span>
+            </p>
+            <div id="slideshow">
+              <div class="slick" id="jsonNews">
+              </div>
+            </div>
+          </div>
+          <div id="hd">
+            <p class="h4 font-weight-bold">
+              Canale HD <span id="hdLen" class="h6 text-muted"></span>
+            </p>
+            <div id="slideshow">
+              <div class="slick" id="jsonHD">
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="main-bottom-text py-4">
+          Pentru activarea unui abonament de TV prin cablu sau pentru mai multe
+          detalii despre aceasta solutie, te asteptam in
+          <span>magazinele Orange</span> sau suna la
+          <a href="tel:+40800400400">0800 400 400</a>
+        </p>
+      </div>
+    </section>
+    <section class="secondary">
+      <div class="container">
+        <div id="slideshow-2">
+          <div class="slick-2">
+          </div>
+        </div>
+        <div class="video">
+          <div class="card mb-3 w-100">
+            <div class="row g-0">
+              <div class="col-md-4 embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"src="https://www.youtube.com/embed/Ic0BhO3Oq3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="card-title"><h3 class="font-weight-bold">Urmareste tutorialul</h3></div>
+                  <p class="card-text pl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident deserunt tempore officiis nam tempora perferendis, eveniet sequi sit ex porro error commodi perspiciatis eum? Ducimus ullam recusandae reiciendis tempore animi.</p>
+                  <button type="button" class="font-weight-bold btn btn-sm btn-outline-dark">Vezi tutorialul</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='container-fluid bottom'>
+        <div class="container py-3">
+          <p>
+            Suna la <a href="tel:+40800400400">0800 400 400</a> sau verifica acoperirea serviciilor prin fibra, lasa-ne datele tale si te vom contacta in maxim o zi lucratoare.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="tertiary pt-5">
+      <div class="container">
+        <div id="slideshow-3">
+          <div class="slick-3">
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid  pb-5">
+        <div class="container">
+          <h2 class="font-weight-bold pt-4 pb-2">Intrebari frecvente</h2>
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Cum pot accesa filmele si serialele disponibile in HBO GO?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui minima repudiandae consectetur soluta quidem suscipit aperiam nesciunt quae deserunt cum?
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Pana cand este valabila oferta?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui minima repudiandae consectetur soluta quidem suscipit aperiam nesciunt quae deserunt cum?
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Ce trebuie sa stiu despre oferta serviciului TV prin cablu?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui minima repudiandae consectetur soluta quidem suscipit aperiam nesciunt quae deserunt cum?
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Cate televizoare sau dispozitive pot conecta la serviciul de televiziune prin cablu?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui minima repudiandae consectetur soluta quidem suscipit aperiam nesciunt quae deserunt cum?
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Cum pot viziona prin Orange Tv Go selectia de canale sau colectia de filme din Movie Go Unlimited, optiune inclusa in abonamentul TV prin cablu?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui minima repudiandae consectetur soluta quidem suscipit aperiam nesciunt quae deserunt cum?
+                </div>
+              </div>
+            </div>
+            <div class="card toggled-card hidden">
+              <div class="card-header" id="headingSix">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, obcaecati.
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui minima repudiandae consectetur soluta quidem suscipit aperiam nesciunt quae deserunt cum?
+                </div>
+              </div>
+            </div>
+            <div class="card toggled-card hidden">
+              <div class="card-header" id="headingSeven">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, doloribus.
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui minima repudiandae consectetur soluta quidem suscipit aperiam nesciunt quae deserunt cum?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <button type="button" id="moreToggler" class="btn font-weight-bold btn-dark btn-small rounded-0">Mai mult</button>
+        </div>
+      </div>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
