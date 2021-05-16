@@ -199,12 +199,11 @@ ul {
     position: absolute;
     content: ">";
     top: 0;
-    right: 3px;
+    right: 2%;
     font-size: 1rem;
     font-weight: bold;
     display: inline-block;
     transform: rotate(90deg);
-    background-color: $white;
     pointer-events: none;
   }
 }
@@ -213,6 +212,8 @@ ul {
   border: none;
   cursor: pointer;
   background-color: transparent;
+  appearance: none;
+  padding-right: 1rem;
 }
 
 .secondary {
