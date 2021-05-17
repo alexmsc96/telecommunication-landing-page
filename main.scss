@@ -71,6 +71,10 @@ $secondary: #4cb4e6;
     cursor: initial;
   }
 
+  .close {
+    transform: translateX(100%);
+  }
+
   .container-lg {
     .main-bottom-text {
       color: $white;
@@ -168,11 +172,6 @@ ul {
   z-index: 2;
 }
 
-#stiri,
-#hd {
-  display: none;
-}
-
 .slick-card {
   background-color: $gray-200;
   max-width: 6rem;
@@ -266,6 +265,7 @@ iframe {
 
 .video {
   padding: 0 24px;
+
   h3 {
     color: $black;
   }

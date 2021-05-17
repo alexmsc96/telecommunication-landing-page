@@ -10917,6 +10917,11 @@ a.text-dark:hover, a.text-dark:focus {
   cursor: initial;
 }
 
+.main .close {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
 .main .container-lg .main-bottom-text {
   color: #fff;
   font-size: 0.9rem;
@@ -11020,11 +11025,6 @@ ul li span {
 
 .dropdown {
   z-index: 2;
-}
-
-#stiri,
-#hd {
-  display: none;
 }
 
 .slick-card {
